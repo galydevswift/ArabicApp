@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Medium.ttf">
+            <string>Nunito-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Contact UsVCL-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ContactUsVCL" id="Y6W-OH-hqX" customClass="ContactUsVCL" customModule="Learn_Arabic_IOS_V1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7A-V2-x7u">
+                                <rect key="frame" x="0.0" y="676" width="414" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jU0-3O-1n8">
+                                        <rect key="frame" x="32" y="26" width="19" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jU0-3O-1n8" secondAttribute="height" multiplier="19:36" id="ElC-UG-ErK"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="x"/>
+                                        <connections>
+                                            <action selector="backContact" destination="Y6W-OH-hqX" eventType="touchDown" id="yQU-Dc-XNo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NgocLam130197@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-Rc-Y0O">
+                                        <rect key="frame" x="14.666666666666657" y="95" width="385" height="30.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Medium" family="Nunito" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxc-gH-h2A">
+                                        <rect key="frame" x="300" y="24" width="103.66666666666669" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nxc-gH-h2A" secondAttribute="height" multiplier="18:7" id="bSR-lx-oTO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Nunito-Medium" family="Nunito" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Copy"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Copy">
+                                            <fontDescription key="titleFontDescription" name="Nunito-Medium" family="Nunito" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="copyPressWithSender:" destination="Y6W-OH-hqX" eventType="touchDown" id="2ns-L4-n9B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="nxc-gH-h2A" firstAttribute="centerY" secondItem="jU0-3O-1n8" secondAttribute="centerY" id="5Xm-fV-c3Z"/>
+                                    <constraint firstItem="1iL-Rc-Y0O" firstAttribute="centerX" secondItem="X7A-V2-x7u" secondAttribute="centerX" id="5pP-bK-aCJ"/>
+                                    <constraint firstItem="1iL-Rc-Y0O" firstAttribute="centerY" secondItem="X7A-V2-x7u" secondAttribute="centerY" id="9Mh-St-XfX"/>
+                                    <constraint firstItem="jU0-3O-1n8" firstAttribute="width" secondItem="X7A-V2-x7u" secondAttribute="width" multiplier="19:414" id="FGe-g7-ctw"/>
+                                    <constraint firstAttribute="width" secondItem="X7A-V2-x7u" secondAttribute="height" multiplier="414:220" id="QNo-Ps-IRu"/>
+                                    <constraint firstItem="jU0-3O-1n8" firstAttribute="centerX" secondItem="X7A-V2-x7u" secondAttribute="centerX" multiplier="0.2" id="fbX-fk-GrW"/>
+                                    <constraint firstItem="nxc-gH-h2A" firstAttribute="centerX" secondItem="X7A-V2-x7u" secondAttribute="centerX" multiplier="1.7" id="kVL-An-Z8d"/>
+                                    <constraint firstItem="nxc-gH-h2A" firstAttribute="width" secondItem="X7A-V2-x7u" secondAttribute="width" multiplier="0.25" id="m5g-qE-tu3"/>
+                                    <constraint firstItem="1iL-Rc-Y0O" firstAttribute="width" secondItem="X7A-V2-x7u" secondAttribute="width" multiplier="385:414" id="n7F-ol-cBP"/>
+                                    <constraint firstItem="jU0-3O-1n8" firstAttribute="centerY" secondItem="X7A-V2-x7u" secondAttribute="centerY" multiplier="0.4" id="se0-h7-phP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="X7A-V2-x7u" secondAttribute="trailing" id="1Vv-LZ-Ih9"/>
+                            <constraint firstItem="X7A-V2-x7u" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IDq-Jh-dLA"/>
+                            <constraint firstAttribute="bottom" secondItem="X7A-V2-x7u" secondAttribute="bottom" id="z05-07-gxd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCopy" destination="nxc-gH-h2A" id="ySw-rn-QWn"/>
+                        <outlet property="lblAddress" destination="1iL-Rc-Y0O" id="hrG-vN-HeC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x" width="17" height="18.333333969116211"/>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

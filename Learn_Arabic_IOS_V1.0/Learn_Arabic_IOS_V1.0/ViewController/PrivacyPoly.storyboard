@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Medium.ttf">
+            <string>Nunito-Medium</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Privacy PolyVCL-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyPolyVCL" id="Y6W-OH-hqX" customClass="PrivacyPolyVCL" customModule="Learn_Arabic_IOS_V1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_background" translatesAutoresizingMaskIntoConstraints="NO" id="OD1-3f-3iB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGroundSettings" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-DI-IH3">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="115.66666666666667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8zQ-DI-IH3" secondAttribute="height" multiplier="414:122" id="HPW-jl-Wak"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lu-43-Lgd">
+                                <rect key="frame" x="17.333333333333332" y="47.666666666666671" width="43.666666666666671" height="43.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Lu-43-Lgd" secondAttribute="height" multiplier="1:1" id="cvN-gF-bYh"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="backSettings"/>
+                                <connections>
+                                    <action selector="backApp" destination="Y6W-OH-hqX" eventType="touchDown" id="G65-44-wUi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Poly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-vw-54T">
+                                <rect key="frame" x="114.66666666666669" y="48.666666666666671" width="164" height="41.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XSS-vw-54T" secondAttribute="height" multiplier="118:30" id="AiA-vd-weu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Medium" family="Nunito" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="EBX-eX-qzk">
+                                <rect key="frame" x="30" y="115.66666666666669" width="333" height="702.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Manga Reader unless otherwise defined in this Privacy Policy.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="EBX-eX-qzk" secondAttribute="bottom" id="A7N-vK-kB1"/>
+                            <constraint firstItem="EBX-eX-qzk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Msf-q3-9Bo"/>
+                            <constraint firstItem="XSS-vw-54T" firstAttribute="centerX" secondItem="8zQ-DI-IH3" secondAttribute="centerX" id="OZ6-es-3sQ"/>
+                            <constraint firstAttribute="bottom" secondItem="OD1-3f-3iB" secondAttribute="bottom" id="RjL-jT-Hk5"/>
+                            <constraint firstItem="6Lu-43-Lgd" firstAttribute="centerX" secondItem="8zQ-DI-IH3" secondAttribute="centerX" multiplier="0.2" id="Skj-7X-saR"/>
+                            <constraint firstItem="OD1-3f-3iB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Wxw-XN-Q9y"/>
+                            <constraint firstItem="8zQ-DI-IH3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bks-Hl-pgX"/>
+                            <constraint firstItem="XSS-vw-54T" firstAttribute="centerY" secondItem="6Lu-43-Lgd" secondAttribute="centerY" id="dTq-X9-mGp"/>
+                            <constraint firstItem="6Lu-43-Lgd" firstAttribute="width" secondItem="8zQ-DI-IH3" secondAttribute="width" multiplier="46:414" id="eO5-FL-bP6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EBX-eX-qzk" secondAttribute="trailing" constant="30" id="fze-3l-hlE"/>
+                            <constraint firstItem="OD1-3f-3iB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hbR-lg-jl3"/>
+                            <constraint firstItem="6Lu-43-Lgd" firstAttribute="centerY" secondItem="8zQ-DI-IH3" secondAttribute="centerY" multiplier="1.2" id="hvl-So-Na1"/>
+                            <constraint firstItem="EBX-eX-qzk" firstAttribute="top" secondItem="8zQ-DI-IH3" secondAttribute="bottom" id="iga-Pl-h8J"/>
+                            <constraint firstItem="8zQ-DI-IH3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="r1h-Yv-SMe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8zQ-DI-IH3" secondAttribute="trailing" id="y9C-xD-pTQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OD1-3f-3iB" secondAttribute="trailing" id="zPe-fH-nBI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="XSS-vw-54T" id="49L-3L-dpg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backGroundSettings" width="414" height="122.66666412353516"/>
+        <image name="backSettings" width="56" height="56"/>
+        <image name="home_background" width="414" height="1079"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

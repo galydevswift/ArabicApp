@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Children StoryVCL-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChildrenStoryVCL" id="Y6W-OH-hqX" customClass="ChildrenStoryVCL" customModule="Learn_Arabic_IOS_V1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGroundAnimals" translatesAutoresizingMaskIntoConstraints="NO" id="50z-Gr-VfW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="50z-Gr-VfW" secondAttribute="height" multiplier="414:122" id="tAY-YC-JEG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children's Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL1-9D-0PZ">
+                                <rect key="frame" x="69.333333333333343" y="60.666666666666657" width="275.33333333333326" height="37.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cL1-9D-0PZ" secondAttribute="height" multiplier="221:30" id="T6s-Lf-Wxt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHu-u5-7Zx">
+                                <rect key="frame" x="18.333333333333329" y="56.333333333333343" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JHu-u5-7Zx" secondAttribute="height" multiplier="1:1" id="gjL-n2-bpd"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="backSettings"/>
+                                <connections>
+                                    <action selector="backChildrenStory" destination="Y6W-OH-hqX" eventType="touchDown" id="oF1-65-Xla"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nh8-3h-U1g">
+                                <rect key="frame" x="30" y="152" width="354" height="744"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rew-mg-hHK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="crN-ic-aaA">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L08-a6-akO">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="ZMv-SO-J3e"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="yIS-Lv-z7n"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JHu-u5-7Zx" firstAttribute="centerX" secondItem="50z-Gr-VfW" secondAttribute="centerX" multiplier="0.2" id="3qd-MV-7Qr"/>
+                            <constraint firstItem="cL1-9D-0PZ" firstAttribute="centerX" secondItem="50z-Gr-VfW" secondAttribute="centerX" id="4r8-Ia-042"/>
+                            <constraint firstItem="50z-Gr-VfW" firstAttribute="trailing" secondItem="Nh8-3h-U1g" secondAttribute="trailing" constant="30" id="9hg-M2-W9Z"/>
+                            <constraint firstItem="50z-Gr-VfW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="DLY-aB-FTF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="50z-Gr-VfW" secondAttribute="trailing" id="Euq-Uh-Geg"/>
+                            <constraint firstItem="Nh8-3h-U1g" firstAttribute="top" secondItem="50z-Gr-VfW" secondAttribute="bottom" constant="30" id="G14-rH-3cN"/>
+                            <constraint firstItem="Nh8-3h-U1g" firstAttribute="leading" secondItem="50z-Gr-VfW" secondAttribute="leading" constant="30" id="RyB-J9-6tr"/>
+                            <constraint firstItem="cL1-9D-0PZ" firstAttribute="centerY" secondItem="JHu-u5-7Zx" secondAttribute="centerY" id="XDF-yz-zGZ"/>
+                            <constraint firstItem="JHu-u5-7Zx" firstAttribute="centerY" secondItem="50z-Gr-VfW" secondAttribute="centerY" multiplier="1.3" id="a7Z-5w-bGF"/>
+                            <constraint firstItem="JHu-u5-7Zx" firstAttribute="width" secondItem="50z-Gr-VfW" secondAttribute="width" multiplier="46:414" id="nxz-zs-QVx"/>
+                            <constraint firstAttribute="bottom" secondItem="Nh8-3h-U1g" secondAttribute="bottom" id="pPB-ej-sI4"/>
+                            <constraint firstItem="cL1-9D-0PZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JHu-u5-7Zx" secondAttribute="trailing" id="qyG-kE-w4l"/>
+                            <constraint firstItem="50z-Gr-VfW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="txD-PD-dUG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="JHu-u5-7Zx" id="ZHg-KG-VGD"/>
+                        <outlet property="childrenStoryCLV" destination="Nh8-3h-U1g" id="Lxu-Qd-V3q"/>
+                        <outlet property="lblName" destination="cL1-9D-0PZ" id="fdi-vT-24f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGroundAnimals" width="414" height="122.66666412353516"/>
+        <image name="backSettings" width="56" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
