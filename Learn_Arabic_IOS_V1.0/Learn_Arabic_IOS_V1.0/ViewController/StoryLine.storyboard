@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Story LineVCL-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StoryLineVCL" id="Y6W-OH-hqX" customClass="StoryLineVCL" customModule="Learn_Arabic_IOS_V1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGroundSocial" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-V2-Dq2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEP-xQ-NjW">
+                                <rect key="frame" x="18.333333333333329" y="58.333333333333343" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WEP-xQ-NjW" secondAttribute="height" multiplier="1:1" id="srZ-cx-bw7"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="backSettings"/>
+                                <connections>
+                                    <action selector="backStoryLine" destination="Y6W-OH-hqX" eventType="touchDown" id="OD3-CQ-DNQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-8S-LKQ">
+                                <rect key="frame" x="207" y="81.333333333333329" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGy-yD-0YT">
+                                <rect key="frame" x="20" y="135" width="374" height="761"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.8156862855" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JGy-yD-0YT" secondAttribute="bottom" id="7rM-1U-EYB"/>
+                            <constraint firstItem="Bhm-V2-Dq2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="99l-5C-MqX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bhm-V2-Dq2" secondAttribute="trailing" id="AW4-Os-GsI"/>
+                            <constraint firstItem="IJU-8S-LKQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WEP-xQ-NjW" secondAttribute="trailing" id="Df8-PT-6Ac"/>
+                            <constraint firstItem="IJU-8S-LKQ" firstAttribute="centerY" secondItem="WEP-xQ-NjW" secondAttribute="centerY" id="JDF-Zw-ByM"/>
+                            <constraint firstItem="JGy-yD-0YT" firstAttribute="top" secondItem="Bhm-V2-Dq2" secondAttribute="bottom" constant="10" id="O4Z-bP-ecQ"/>
+                            <constraint firstItem="JGy-yD-0YT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Qro-RX-2hL"/>
+                            <constraint firstItem="WEP-xQ-NjW" firstAttribute="centerX" secondItem="Bhm-V2-Dq2" secondAttribute="centerX" multiplier="0.2" id="Ua8-eI-QOI"/>
+                            <constraint firstItem="WEP-xQ-NjW" firstAttribute="centerY" secondItem="Bhm-V2-Dq2" secondAttribute="centerY" multiplier="1.3" id="X0B-09-6dK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JGy-yD-0YT" secondAttribute="trailing" constant="20" id="XHf-jC-u8p"/>
+                            <constraint firstItem="Bhm-V2-Dq2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Zvh-Od-HHS"/>
+                            <constraint firstItem="WEP-xQ-NjW" firstAttribute="width" secondItem="Bhm-V2-Dq2" secondAttribute="width" multiplier="46:414" id="d1B-Bf-Gke"/>
+                            <constraint firstItem="IJU-8S-LKQ" firstAttribute="centerX" secondItem="Bhm-V2-Dq2" secondAttribute="centerX" id="qvb-3g-oeH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="WEP-xQ-NjW" id="TUT-wd-vHp"/>
+                        <outlet property="lblStoryLine" destination="IJU-8S-LKQ" id="5nP-UV-EZv"/>
+                        <outlet property="tStoryLine" destination="JGy-yD-0YT" id="AvQ-Nc-FRo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backGroundSocial" width="414" height="125"/>
+        <image name="backSettings" width="56" height="56"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
