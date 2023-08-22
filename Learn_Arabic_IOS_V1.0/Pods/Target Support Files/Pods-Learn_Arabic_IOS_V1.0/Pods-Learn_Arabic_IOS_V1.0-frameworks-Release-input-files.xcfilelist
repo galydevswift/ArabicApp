@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Learn_Arabic_IOS_V1.0/Pods-Learn_Arabic_IOS_V1.0-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Mute/Mute.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${BUILT_PRODUCTS_DIR}/TouchDraw/TouchDraw.framework
